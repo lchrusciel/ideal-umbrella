@@ -19,4 +19,9 @@ if ('serviceWorker' in navigator) {
 
 console.log(`Hello world!`);
 
+let toggle = document.querySelector('.navigation-menu-toggle__button--js');
+let navigation = document.querySelector('.navigation--js');
 
+toggle.addEventListener('click', () => {
+  navigation.classList.toggle('navigation--visible-js');
+});

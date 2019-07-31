@@ -11,6 +11,174 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  color: #333333;
+  display: grid;
+  grid-template-rows: 82px 1fr 82px;
+  grid-template-areas: "header"
+  "content"
+  "footer";
+}
+
+.about {
+}
+
+.about__content {
+}
+
+.about__header {
+  color: #69626D;
+}
+
+.article {
+}
+
+.article__content {
+  padding: 3px 16px;
+}
+
+.article__header {
+  color: #8B2635;
+}
+
+.blog {
+}
+
+.blog--anchor:before {
+  content: '';
+  display: block;
+  padding-top: 82px; /* header height + empty space */
+  margin-top: -82px; /* header height to degrees padding’s space */
+}
+
+.blog__articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.blog__header {
+  color: #69626D;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+.main {
+  grid-area: content;
+  width: 100%;
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 0 16px;
+}
+
+.header {
+}
+
+.header__title {
+  color: #424874;
+}
+
+.header__link {
+  text-decoration: none;
+}
+
+.site-header {
+  grid-area: header;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-sizing: border-box;
+  padding: 16px;
+  color: #8B2635;
+  background-color: #F4F5FF;
+}
+
+.navigation {
+}
+
+.navigation__list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.navigation__item {
+  display: inline;
+  margin: 0 16px;
+}
+
+.navigation__link {
+  text-decoration: none;
+}
+
+.navigation-menu-toggle {
+  align-items: center;
+}
+
+.navigation-menu-toggle__button {
+  border: 0;
+  outline: none;
+  background: none;
+}
+
+.post {
+}
+
+.post__content {
+  padding: 3px 16px;
+}
+
+.post__header {
+  color: #2E3532;
+}
+
+@media (max-width: 700px) {
+  .blog__articles {
+    grid-template-columns: 1fr;
+  }
+  .navigation {
+    display: none;
+  }
+
+  .navigation--visible-js {
+    display: block;
+  }
+
+  .navigation__item {
+    display: inline;
+    margin: 16px 0;
+  }
+
+  .navigation__list{
+    flex-flow: column-reverse;
+    margin: 0;
+  }
+
+  .site-header {
+    display: grid;
+    grid-template-columns: 1fr 32px;
+  }
+
+  .navigation-menu-toggle {
+    grid-column-start: 2;
+  }
+}
+
+@media (min-width: 701px) {
+  .navigation-menu-toggle {
+    display: none;
+  }
 }

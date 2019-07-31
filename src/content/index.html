@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
+    <title>Personal website</title>
     <meta name="description" content="Description" />
 
     <!-- Title -->
@@ -33,8 +33,137 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <header class="site-header">
+    <nav class="navigation navigation--js">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="index.html">Homepage</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="articles/article1.html">First article</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="articles/article2.html">Second article</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="articles/article3.html">Third article</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="articles/article4.html">Fourth article</a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="articles/article5.html">Fifth article</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="navigation-menu-toggle">
+      <button class="navigation-menu-toggle__button navigation-menu-toggle__button--js">☰</button>
+    </div>
+  </header>
+  <main class="main" id="top">
+    <header class="header">
+      <h1 class="header__title">Łukasz Chruściel - Homepage</h1>
+      <a class="header__link" href="#blog">Checkout my blog</a>
+    </header>
+    <section class="about">
+      <h2 class="about__header">About me</h2>
+      <p class="about__content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus esse
+        exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente soluta
+        temporibus vel voluptate!
+      </p>
+      <p class="about__content about__content--js">
+      </p>
+    </section>
+    <section class="blog blog--anchor" id="blog">
+      <header>
+        <h2 class="blog__header">Blog</h2>
+      </header>
+      <div class="blog__articles">
+        <section class="post">
+          <h3 class="post__header">Fourth blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">Third blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">Second blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">First blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">First blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">First blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">First blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">First blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+        <section class="post">
+          <h3 class="post__header">First blog post</h3>
+          <p class="post__content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid asperiores dolorum, ducimus
+            esse exercitationem fugiat harum, illo magnam maxime nisi obcaecati, odit perferendis quo sapiente
+            soluta temporibus vel voluptate!
+          </p>
+        </section>
+      </div>
+    </section>
+    <section>
+      <form action="http://dev.cotenfrontend.pl/" method="post">
+        <label for="name">Your name: </label>
+        <input type="text" id="name" name="name" />
+        <label for="riddle">Your riddle: </label>
+        <input type="text" id="riddle" name="riddle"/>
 
-    <script src="js/main.js"></script>
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <a href="#top" class="footer_top">To the top</a>
+    Personal homepage of Łukasz Chruściel.
+  </footer>
+  <script src="js/main.js"></script>
   </body>
 </html>
