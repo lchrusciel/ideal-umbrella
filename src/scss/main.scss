@@ -1,7 +1,6 @@
 @import "_normalize";
 @import "_variables";
 
-
 html {
   box-sizing: border-box;
 }
@@ -13,7 +12,7 @@ html {
 body {
   background-color: #8EC5FC;
   background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  color: #333333;
+  color: $darkGrey;
   display: grid;
   grid-template-rows: 82px 1fr 82px;
   grid-template-areas: "header"
@@ -28,7 +27,7 @@ body {
 }
 
 .about__header {
-  color: #69626D;
+  color: $gray;
 }
 
 .article {
@@ -39,7 +38,7 @@ body {
 }
 
 .article__header {
-  color: #8B2635;
+  color: $intensiveRed;
 }
 
 .blog {
@@ -58,7 +57,7 @@ body {
 }
 
 .blog__header {
-  color: #69626D;
+  color: $gray;
 }
 
 .footer {
@@ -86,7 +85,7 @@ body {
 }
 
 .header__title {
-  color: #424874;
+  color: $violet;
 }
 
 .header__link {
@@ -100,8 +99,8 @@ body {
   top: 0;
   box-sizing: border-box;
   padding: 16px;
-  color: #8B2635;
-  background-color: #F4F5FF;
+  color: $intensiveRed;
+  background-color: $lightGrey;
 }
 
 .navigation {
@@ -142,7 +141,7 @@ body {
 }
 
 .post__header {
-  color: #2E3532;
+  color: $darkGreen;
 }
 
 @media (max-width: 700px) {
