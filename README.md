@@ -1,9 +1,16 @@
-# wtf-gulp-starter
+# Ideal umbrella
 
-`npm install -g gulp-cli`
+## WTF Project
 
-`npm install`
+### Installation
 
-`gulp`
+```bash
+npm install
+npm run gulp
+```
 
-To publish your page using github pages use `npm run deploy`
+### Deploy
+
+```bash
+npm run deploy
+```
